@@ -28,7 +28,7 @@ def compile_gdimage(pd: str, ad: str) -> None:
     print('Compressing image files')
     tar = tarfile.TarFile('geometrydash.gdimg', 'w')
     tar.add('gdimage/data')
-    tar.add('gdimage/procfiles')
+    tar.add('gdimage/progfiles')
     tar.add('gdimage/appdata')
     tar.close()
 
@@ -41,8 +41,6 @@ def compile_gdimage(pd: str, ad: str) -> None:
 
 if __name__ == '__main__':
     os.mkdir('gdimage')
-    os.mkdir('gdimage/appdata')
-    os.mkdir('gdimage/progfiles')
     os.mkdir('gdimage/data')
 
     program_dir = input('GD Program Files directory: ')
