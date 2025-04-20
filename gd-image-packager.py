@@ -14,7 +14,7 @@ def compile_gdimage(pd: str, ad: str) -> None:
 
     print('Copying GD Files')
     print('  Copying GD Program Files')
-    shutil.copytree(pd, 'gdimage/procfiles')
+    shutil.copytree(pd, 'gdimage/progfiles')
     print('  Copying GD AppData Files')
     shutil.copytree(ad, 'gdimage/appdata')
 
